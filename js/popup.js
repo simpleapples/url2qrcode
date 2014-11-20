@@ -4,4 +4,8 @@ chrome.tabs.getSelected(null, function(tab) {
 		height: 200,
 		text: tab.url
 	});
+	var backgroundPage = chrome.extension.getBackgroundPage();
+	backgroundPage.getShortUrl(tab.url, function(result) {
+		console.log('---', result);
+	});
 });
