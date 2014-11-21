@@ -1,6 +1,6 @@
 {
 	"name": "url2qrcode",
-	"version": "2.0",
+	"version": "2.1",
 	"description": "将当前选项卡的URL转换为二维码，手机可以直接扫码访问。",
 	"background": {
         "page": "background.html"
