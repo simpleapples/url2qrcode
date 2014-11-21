@@ -6,6 +6,10 @@ chrome.tabs.getSelected(null, function(tab) {
 	});
 	var backgroundPage = chrome.extension.getBackgroundPage();
 	backgroundPage.getShortUrl(tab.url, function(result) {
-		console.log('---', result);
+		var jsonObject = JSON.parse(result);
+		if (jsonObject.status == 0 && jsonObject.tinyurl) {
+			$('#short-url-link').attr('href', jsonObject.tinyurl);
+			$('#short-url-link').text(jsonObject.tinyurl);
+		}
 	});
 });

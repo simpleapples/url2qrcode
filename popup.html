@@ -7,10 +7,29 @@
 			width: 200px;
 			height: 200px;
 		}
+		#short-url {
+			width: 200px;
+			height: 20px;
+			text-align: center;
+			line-height: 30px;
+		}
+		a {
+			color: #333;
+			font-size: 12px;
+			text-decoration: none;
+			outline: none;
+		}
+		a:hover {
+			text-decoration: underline;
+			cursor: pointer;
+		}
 		</style>
 	</head>
 	<body>
 		<div id="qrcode-box"></div>
+		<div id="short-url">
+			<a id="short-url-link" href="" target="_blank"></a>
+		</div>
 		<script src="js/jquery-1.11.1.min.js"></script>
 		<script src="js/jquery.qrcode.min.js"></script>
 		<script src="js/popup.js"></script>

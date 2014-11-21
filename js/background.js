@@ -1,5 +1,5 @@
 function getShortUrl(url, callback) {
-	$.post('http://dwz.cn/create.php', {url: encodeURIComponent(url)}, function(result) {
+	$.post('http://dwz.cn/create.php', {url: url}, function(result) {
 		callback(result);
 	});
 }
