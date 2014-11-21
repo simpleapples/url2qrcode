@@ -10,6 +10,8 @@ chrome.tabs.getSelected(null, function(tab) {
 		if (jsonObject.status == 0 && jsonObject.tinyurl) {
 			$('#short-url-link').attr('href', jsonObject.tinyurl);
 			$('#short-url-link').text(jsonObject.tinyurl);
+		} else {
+			$('#short-url-link').text('该页没有短网址');
 		}
 	});
 });
