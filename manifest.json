@@ -1,6 +1,6 @@
 {
 	"name": "二维码短网址生成器",
-	"version": "2.5",
+	"version": "2.7",
 	"description": "将当前选项卡的URL转换为短网址和二维码，一键复制到剪切板，手机可以直接扫码访问。",
 	"background": {
         "page": "background.html"

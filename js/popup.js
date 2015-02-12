@@ -8,7 +8,9 @@ chrome.tabs.getSelected(null, function(tab) {
 	backgroundPage.getShortUrl(tab.url, function(result) {
 		var jsonObject = JSON.parse(result);
 		if (jsonObject.status == 0 && jsonObject.tinyurl) {
-			$('#short-url-input').val(jsonObject.tinyurl);
+			var tinyUrl = jsonObject.tinyurl;
+			$('#short-url-input').val(tinyUrl);
+			$('#copy-text-input').val(tab.title + ' ' + tinyUrl);
 			$('#click-copy').show();
 		} else {
 			$('#short-url-input').val('该页没有短网址').attr('readonly', true);
@@ -17,7 +19,7 @@ chrome.tabs.getSelected(null, function(tab) {
 });
 
 $('#click-copy').click(function() {
-	$('#short-url-input').select();
+	$('#copy-text-input').select();
 	document.execCommand('Copy');
 	$('#click-copy').text('完成');
 });
