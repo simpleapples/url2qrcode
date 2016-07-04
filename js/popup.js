@@ -4,18 +4,6 @@ chrome.tabs.getSelected(null, function(tab) {
 		height: 200,
 		text: tab.url
 	});
-	var backgroundPage = chrome.extension.getBackgroundPage();
-	backgroundPage.getShortUrl(tab.url, function(result) {
-		var jsonObject = JSON.parse(result);
-		if (jsonObject.status == 0 && jsonObject.tinyurl) {
-			var tinyUrl = jsonObject.tinyurl;
-			$('#short-url-input').val(tinyUrl);
-			$('#copy-text-input').val(tab.title + ' ' + tinyUrl);
-			$('#click-copy').show();
-		} else {
-			$('#short-url-input').val('该页没有短网址').attr('readonly', true);
-		}
-	});
 });
 
 $('#click-copy').click(function() {

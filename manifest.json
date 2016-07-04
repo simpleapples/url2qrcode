@@ -1,10 +1,7 @@
 {
-	"name": "二维码短网址生成器",
-	"version": "2.8",
-	"description": "将当前选项卡的URL转换为短网址和二维码，一键复制到剪切板，手机可以直接扫码访问。",
-	"background": {
-        "page": "background.html"
-	},
+	"name": "网址二维码生成器",
+	"version": "3.0",
+	"description": "将当前选项卡的URL转换为二维码，手机直接扫码访问。",
 	"browser_action": {
 		"default_icon": "icon48.png",
 		"default_popup": "popup.html"
@@ -16,7 +13,6 @@
 	},
 	"permissions": [
 		"tabs",
-		"http://dwz.cn/",
 		"clipboardWrite"
 	],
 	"manifest_version": 2
