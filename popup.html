@@ -8,10 +8,41 @@
 			width: 200px;
 			height: 200px;
 		}
+		#short-url {
+			width: 200px;
+			height: 20px;
+			text-align: center;
+			line-height: 30px;
+		}
+		a {
+			color: #333;
+			font-size: 12px;
+			text-decoration: none;
+			outline: none;
+		}
+		a:hover {
+			cursor: pointer;
+		}
+		input {
+			outline: none;
+			border: none;
+		}
+		#short-url-input {
+			text-align: center;
+		}
+		#copy-text-input {
+			width: 1px;
+			height: 1px;
+		}
 		</style>
 	</head>
 	<body>
 		<div id="qrcode-box"></div>
+		<div id="short-url">
+			<input id="copy-text-input" name="copy-text-input" type="text" value="" />
+			<input id="short-url-input" name="short-url-input" type="text" value="短网址生成中..." />
+			<a id="click-copy" style="display:none;">复制</a>
+		</div>
 		<script src="js/jquery-1.11.1.min.js"></script>
 		<script src="js/jquery.qrcode.min.js"></script>
 		<script src="js/popup.js"></script>

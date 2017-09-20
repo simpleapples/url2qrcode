@@ -13,6 +13,8 @@
 	},
 	"permissions": [
 		"tabs",
+		"webRequest",
+		"http://dwz.cn/",
 		"clipboardWrite"
 	],
 	"manifest_version": 2
