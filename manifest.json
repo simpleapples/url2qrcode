@@ -1,7 +1,7 @@
 {
-	"name": "网址二维码生成器",
-	"version": "3.0",
-	"description": "将当前选项卡的URL转换为二维码，手机直接扫码访问。",
+	"name": "短网址二维码生成器",
+	"version": "4.0",
+	"description": "将当前选项卡的URL转换为二维码和短网址，手机直接扫码访问。",
 	"browser_action": {
 		"default_icon": "icon48.png",
 		"default_popup": "popup.html"
