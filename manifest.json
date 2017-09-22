@@ -15,6 +15,7 @@
 		"tabs",
 		"webRequest",
 		"http://dwz.cn/",
+		"https://api.weibo.com/",
 		"clipboardWrite"
 	],
 	"manifest_version": 2
