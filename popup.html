@@ -29,17 +29,21 @@
 		}
 		#short-url-input {
 			text-align: center;
+			width: 150px;
 		}
 		#copy-text-input {
 			width: 1px;
 			height: 1px;
+		}
+		#click-copy {
+			width: 40px;
 		}
 		</style>
 	</head>
 	<body>
 		<div id="qrcode-box"></div>
 		<div id="short-url">
-			<input id="copy-text-input" name="copy-text-input" type="text" value="" />
+			<input id="copy-text-input" name="copy-text-input" type="text" value="" hidden="hidden" />
 			<input id="short-url-input" name="short-url-input" type="text" value="短网址生成中..." />
 			<a id="click-copy" style="display:none;">复制</a>
 		</div>
