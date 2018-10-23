@@ -1,6 +1,6 @@
 {
 	"name": "短网址二维码生成器",
-	"version": "5.1",
+	"version": "5.2",
 	"description": "将当前选项卡的URL转换为二维码和短网址，手机直接扫码访问。",
 	"browser_action": {
 		"default_icon": "icon48.png",
@@ -14,8 +14,7 @@
 	"permissions": [
 		"tabs",
 		"webRequest",
-		"http://dwz.cn/",
-		"https://api.weibo.com/",
+		"https://dwz.cn/",
 		"clipboardWrite"
 	],
 	"manifest_version": 2
